@@ -8,9 +8,9 @@ const Searchbar = () => {
   const [searchContent,setSearchContent] = useState('')
   const [changeText, setChangeText] = useState([`Hacker's Quest`, 'Uncover the Secrets', 'Dig Deeper', 'Unlock the Vault', `Hacker's Haven`, 'Hunt for Bytes']);
   const [index, setIndex] = useState(0);
-  // setInterval(() => {
-  //   setIndex((index + 1) % changeText.length)
-  // }, 2000)
+  setInterval(() => {
+    setIndex((index + 1) % changeText.length)
+  }, 2000)
 
 
   return (

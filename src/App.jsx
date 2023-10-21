@@ -4,7 +4,6 @@ import Home from './pages/Home'
 import NewsDetailsPage from './pages/NewsDetailsPage'
 import './index.css'
 import { createContext, useState } from 'react'
-import Footer from './component/Footer'
 import Contact from './pages/Contact'
 
 export const Mycontext = createContext();

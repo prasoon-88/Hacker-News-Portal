@@ -15,7 +15,7 @@ const NewsDetailsPage = () => {
   const getProductDetails = async()=>{
     try {
       setLoading(true);
-      let res = await axios.get(`http://hn.algolia.com/api/v1/items/${id}`)
+      let res = await axios.get(`https://hn.algolia.com/api/v1/items/${id}`)
       setResult(res.data)
       console.log(res.data)
       setLoading(false);

@@ -14,7 +14,7 @@ const Result = () => {
     const getResult = async() => {
         try {
             setLoading(true)
-            let res = await axios.get(`http://hn.algolia.com/api/v1/search?query=${search}&tags=story&page=${page}&hitsPerPage=10`)
+            let res = await axios.get(`https://hn.algolia.com/api/v1/search?query=${search}&tags=story&page=${page}&hitsPerPage=10`)
             setResult(res?.data?.hits)
             setTimeout(()=>{
                 setLoading(false)
